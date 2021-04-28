@@ -1,0 +1,416 @@
+/* Settings */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+.element::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Utility Components */
+svg {
+  opacity: 0;
+}
+
+.btn-outline-pink {
+  color: #fc427b;
+  border-color: #fc427b;
+  border-radius: 50px;
+}
+
+.btn-outline-pink:hover {
+  color: #fff;
+  border-color: #e83e8c;
+  background-color: #e83e8c;
+  border-radius: 50px;
+}
+
+.btn-pink {
+  background-color: #e83e8c;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.btn-pink:hover {
+  background-color: #ec559a;
+  color: #fff;
+  border-radius: 50px;
+}
+
+/* Navbar Components */
+.navbar {
+  background-color: #fff;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #e83e8c;
+}
+
+.navbar .nav-link {
+  font-size: 17px;
+}
+
+.navbar .active {
+  color: #e83e8c !important;
+}
+
+.navbar a:hover {
+  color: #e83e8c !important;
+}
+
+/* Jumbotron Components */
+.jumbotron {
+  background-color: #f6faff;
+  margin-top: -85px;
+  height: 555px;
+  text-align: center;
+}
+
+.jumbotron .jumbotron-body {
+  margin-top: 150px;
+}
+
+.jumbotron .jumbotron-body img {
+  position: relative;
+  z-index: 1;
+  top: -50px;
+  width: 320px;
+  margin-top: 70px;
+}
+
+.jumbotron .jumbotron-body .display-4 {
+  margin-top: -50px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.jumbotron .jumbotron-body .lead {
+  font-weight: 300;
+}
+
+/* Features Components */
+.features {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.features .features-body .display-4 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.features .features-body .display-4 span {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #e83e8c;
+}
+
+.features .features-body .lead {
+  font-size: 18px;
+}
+
+.features .features-body .features-list {
+  margin-top: -2px;
+  margin-bottom: 30px;
+}
+
+.features .features-body .features-list img {
+  width: 150px;
+}
+
+.features .features-body .features-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.features .features-body .features-list p {
+  font-weight: 400;
+}
+
+/* Pricing Components */
+#pricing .pricing {
+  background-color: #1f2d3d;
+  color: #f8f9fa;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -50px;
+}
+
+#pricing .pricing .pricing-body img {
+  margin-top: 35px;
+  width: 320px;
+}
+
+#pricing .pricing .pricing-body .display-4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#pricing .pricing .pricing-body .lead {
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+#pricing .pricing .pricing-body .lead span {
+  font-weight: 700;
+  color: #ffd200;
+  letter-spacing: 1px;
+}
+
+/* About Components */
+.about {
+  margin: auto;
+}
+
+.about .about-body {
+  margin-bottom: 75px;
+  font-size: 15px;
+}
+
+.about .about-body img {
+  width: 335px;
+}
+
+.about .about-body span {
+  color: #e83e8c;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* Contact Components */
+.contact {
+  text-align: center;
+  margin: auto;
+}
+
+.contact .content img {
+  width: 340px;
+  margin-top: -140px;
+}
+
+.contact .content .display-4 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: -20px;
+}
+
+.contact .content .lead {
+  font-size: 18px;
+}
+
+.contact .content .social-media-content img {
+  background-color: #f6faff;
+  margin-top: 10px;
+  padding: 10px 10px;
+  border-radius: 50px;
+  width: 60px;
+}
+
+.contact .content .social-media-content h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.contact .content .social-media-content a {
+  text-decoration: none;
+  color: #1f2d3d;
+}
+
+@media (min-width: 992px) {
+  /* SVG Settings */
+  svg {
+    opacity: 1;
+  }
+  /* Navbar Components */
+  .navbar {
+    background-color: transparent;
+  }
+  .navbar .navbar-brand {
+    padding: 10 px 0px;
+    letter-spacing: 3px;
+  }
+  .navbar .nav-link {
+    margin-left: 25px;
+    font-size: 14px;
+  }
+  .navbar .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #e83e8c;
+    margin: auto;
+    width: 30%;
+    padding-bottom: 5px;
+    margin-bottom: -9px;
+  }
+  .navbar .active::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #e83e8c;
+    margin: auto;
+    width: 30%;
+    padding-bottom: 5px;
+    margin-bottom: -9px;
+  }
+  /* Jumbotron Components */
+  .jumbotron {
+    margin-top: -100px;
+    height: 450px;
+    text-align: start;
+  }
+  .jumbotron .jumbotron-body {
+    margin-top: 150px;
+  }
+  .jumbotron .jumbotron-body img {
+    position: relative;
+    z-index: 1;
+    top: -140px;
+    left: 120px;
+    width: 450px;
+  }
+  .jumbotron .jumbotron-body .display-4 {
+    font-size: 42px;
+    margin-top: 0px;
+  }
+  .jumbotron .jumbotron-body .lead {
+    font-size: 18px;
+    width: 78%;
+  }
+  .jumbotron svg {
+    margin-top: -175px;
+  }
+  /* Features Components */
+  .features {
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+  .features .features-body .display-4 {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .features .features-body .display-4 span {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e83e8c;
+  }
+  .features .features-body .display-4::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #e83e8c;
+    margin: auto;
+    width: 30%;
+    padding-bottom: 5px;
+    margin-bottom: -9px;
+    width: 10%;
+    margin-bottom: 35px;
+  }
+  .features .features-body .lead {
+    font-size: 16px;
+    width: 60%;
+    margin: auto;
+  }
+  /* Pricing Components */
+  #pricing {
+    margin-top: -60px;
+  }
+  #pricing .pricing {
+    background-color: #1f2d3d;
+    color: #f8f9fa;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #pricing .pricing .pricing-body {
+    text-align: center;
+  }
+  #pricing .pricing .pricing-body img {
+    width: 450px;
+  }
+  #pricing .pricing .pricing-body .display-4 {
+    margin-top: -30px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  #pricing .pricing .pricing-body .lead {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /* About Components */
+  .about .about-body {
+    margin-bottom: -120px;
+  }
+  .about .about-body img {
+    width: 500px;
+  }
+  .about .about-body .about-text {
+    margin-top: 80px;
+  }
+  .about .about-body .about-text p {
+    font-size: 17px;
+  }
+  /* Contact Components */
+  .contact .content {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .contact .content img {
+    margin-top: -35px;
+    width: 500px;
+  }
+  .contact .content .display-4 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+  .contact .content .lead {
+    font-size: 18px;
+  }
+  .contact .content .social-media-content {
+    margin-top: 85px;
+    text-align: center;
+    margin: auto;
+  }
+  .contact .content .social-media-content img {
+    background-color: #f6faff;
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    width: 60px;
+  }
+  .contact .content .social-media-content h2 {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .contact .content .social-media-content a {
+    text-decoration: none;
+    color: #1f2d3d;
+  }
+}
+/*# sourceMappingURL=main.css.map */

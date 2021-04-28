@@ -1,0 +1,397 @@
+/* Settings */
+html {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+.element::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Utility Components */
+$primary-color: #e83e8c;
+
+svg {
+  opacity: 0;
+}
+
+.btn-outline-pink {
+  color: #fc427b;
+  border-color: #fc427b;
+  border-radius: 50px;
+}
+
+.btn-outline-pink:hover {
+  color: #fff;
+  border-color: $primary-color;
+  background-color: $primary-color;
+  border-radius: 50px;
+}
+
+.btn-pink {
+  background-color: $primary-color;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.btn-pink:hover {
+  background-color: #ec559a;
+  color: #fff;
+  border-radius: 50px;
+}
+
+@mixin nav-lines {
+  content: "";
+  display: block;
+  border-bottom: 4px solid $primary-color;
+  margin: auto;
+  width: 30%;
+  padding-bottom: 5px;
+  margin-bottom: -9px;
+}
+
+/* Navbar Components */
+.navbar {
+  background-color: #fff;
+  .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: $primary-color;
+  }
+  .nav-link {
+    font-size: 17px;
+  }
+
+  .active {
+    color: $primary-color !important;
+  }
+
+  a:hover {
+    color: $primary-color !important;
+  }
+}
+
+/* Jumbotron Components */
+.jumbotron {
+  background-color: #f6faff;
+  margin-top: -85px;
+  height: 555px;
+  text-align: center;
+  .jumbotron-body {
+    margin-top: 150px;
+    img {
+      position: relative;
+      z-index: 1;
+      top: -50px;
+      width: 320px;
+      margin-top: 70px;
+    }
+    .display-4 {
+      margin-top: -50px;
+      font-weight: 600;
+      font-size: 32px;
+    }
+    .lead {
+      font-weight: 300;
+    }
+  }
+}
+
+/* Features Components */
+.features {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+  .features-body {
+    .display-4 {
+      font-weight: 500;
+      font-size: 32px;
+      span {
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $primary-color;
+      }
+    }
+    .lead {
+      font-size: 18px;
+    }
+    .features-list {
+      margin-top: -2px;
+      margin-bottom: 30px;
+      img {
+        width: 150px;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+/* Pricing Components */
+#pricing {
+  .pricing {
+    background-color: #1f2d3d;
+    color: #f8f9fa;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: -50px;
+    .pricing-body {
+      img {
+        margin-top: 35px;
+        width: 320px;
+      }
+      .display-4 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .lead {
+        font-size: 16px;
+        padding-bottom: 50px;
+        span {
+          font-weight: 700;
+          color: #ffd200;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+/* About Components */
+.about {
+  margin: auto;
+  .about-body {
+    margin-bottom: 75px;
+    font-size: 15px;
+    img {
+      width: 335px;
+    }
+    span {
+      color: $primary-color;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 17px;
+    }
+  }
+}
+
+/* Contact Components */
+.contact {
+  text-align: center;
+  margin: auto;
+  .content {
+    img {
+      width: 340px;
+      margin-top: -140px;
+    }
+    .display-4 {
+      font-weight: 600;
+      font-size: 32px;
+      margin-top: -20px;
+    }
+    .lead {
+      font-size: 18px;
+    }
+    .social-media-content {
+      img {
+        background-color: #f6faff;
+        margin-top: 10px;
+        padding: 10px 10px;
+        border-radius: 50px;
+        width: 60px;
+      }
+      h2 {
+        margin-top: 15px;
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: #1f2d3d;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  /* SVG Settings */
+  svg {
+    opacity: 1;
+  }
+
+  /* Navbar Components */
+  .navbar {
+    background-color: transparent;
+    .navbar-brand {
+      padding: 10 px 0px;
+      letter-spacing: 3px;
+    }
+    .nav-link {
+      margin-left: 25px;
+      font-size: 14px;
+    }
+    .nav-link:hover::after {
+      @include nav-lines();
+    }
+    .active::after {
+      @include nav-lines();
+    }
+  }
+
+  /* Jumbotron Components */
+  .jumbotron {
+    margin-top: -100px;
+    height: 450px;
+    text-align: start;
+    .jumbotron-body {
+      margin-top: 150px;
+      img {
+        position: relative;
+        z-index: 1;
+        top: -140px;
+        left: 120px;
+        width: 450px;
+      }
+      .display-4 {
+        font-size: 42px;
+        margin-top: 0px;
+      }
+      .lead {
+        font-size: 18px;
+        width: 78%;
+      }
+    }
+    svg {
+      margin-top: -175px;
+    }
+  }
+
+  /* Features Components */
+  .features {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    .features-body {
+      .display-4 {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+        span {
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: $primary-color;
+        }
+      }
+      .display-4::after {
+        @include nav-lines();
+        width: 10%;
+        margin-bottom: 35px;
+      }
+      .lead {
+        font-size: 16px;
+        width: 60%;
+        margin: auto;
+      }
+    }
+  }
+
+  /* Pricing Components */
+  #pricing {
+    margin-top: -60px;
+    .pricing {
+      background-color: #1f2d3d;
+      color: #f8f9fa;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      .pricing-body {
+        text-align: center;
+        img {
+          width: 450px;
+        }
+        .display-4 {
+          margin-top: -30px;
+          font-size: 32px;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        .lead {
+          font-size: 16px;
+          width: 80%;
+          margin: auto;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  /* About Components */
+  .about {
+    .about-body {
+      margin-bottom: -120px;
+      img {
+        width: 500px;
+      }
+      .about-text {
+        margin-top: 80px;
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  /* Contact Components */
+  .contact {
+    .content {
+      margin-bottom: 100px;
+      text-align: center;
+      img {
+        margin-top: -35px;
+        width: 500px;
+      }
+      .display-4 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-top: 50px;
+      }
+      .lead {
+        font-size: 18px;
+      }
+      .social-media-content {
+        margin-top: 85px;
+        text-align: center;
+        margin: auto;
+        img {
+          background-color: #f6faff;
+          margin-top: 10px;
+          padding: 10px 10px;
+          border-radius: 50px;
+          width: 60px;
+        }
+        h2 {
+          margin-top: 15px;
+          font-size: 15px;
+        }
+        a {
+          text-decoration: none;
+          color: #1f2d3d;
+        }
+      }
+    }
+  }
+}
