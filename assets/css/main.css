@@ -141,7 +141,7 @@ svg {
 
 /* Pricing Components */
 #pricing .pricing {
-  background-color: #1f2d3d;
+  background-color: #e83e8c;
   color: #f8f9fa;
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
@@ -339,7 +339,7 @@ svg {
     margin-top: -60px;
   }
   #pricing .pricing {
-    background-color: #1f2d3d;
+    background-color: #ec559a;
     color: #f8f9fa;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
