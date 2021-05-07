@@ -1,0 +1,66 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/* Pricing Components */
+.pricing {
+  font-family: "Poppins", sans-serif;
+  .jumbotron {
+    background-color: #ff5792;
+    color: #fff;
+    margin-top: -5px;
+    margin-bottom: -15px;
+    text-align: center;
+    .display-4 {
+      font-weight: 600;
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+    .lead {
+      font-size: 17px;
+    }
+    .pricing-list {
+      img {
+        width: 250px;
+      }
+      .display-4 {
+        font-size: 18px;
+      }
+      .lead {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  /* Pricing Components */
+  .pricing {
+    .jumbotron {
+      margin-bottom: -5px;
+      img {
+        width: 500px;
+      }
+      .display-4 {
+        font-weight: 600;
+      }
+      .lead {
+        font-size: 15px;
+      }
+      .pricing-list {
+        text-align: center;
+        img {
+          width: 150px;
+        }
+        .display-4 {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        .lead {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

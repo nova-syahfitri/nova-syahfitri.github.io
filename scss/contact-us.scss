@@ -1,0 +1,44 @@
+/* Contact Us Components */
+.contact-us {
+  text-align: center;
+  margin: auto;
+  img {
+    width: 340px;
+    margin-top: 50px;
+  }
+  .display-4 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: -20px;
+  }
+  .lead {
+    font-size: 18px;
+  }
+  .social-media-content {
+    img {
+      background-color: #f6faff;
+      margin-top: 10px;
+      padding: 10px 10px;
+      border-radius: 50px;
+      width: 60px;
+    }
+    h2 {
+      margin-top: 15px;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    a {
+      text-decoration: none;
+      color: #1f2d3d;
+    }
+  }
+}
+@media (min-width: 992px) {
+  /* Contact Us Components */
+  .contact-us {
+    img {
+      width: 500px;
+      margin-top: -100px;
+    }
+  }
+}

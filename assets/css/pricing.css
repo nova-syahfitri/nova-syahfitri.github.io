@@ -1,0 +1,68 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+/* Pricing Components */
+.pricing {
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing .jumbotron {
+  background-color: #ff5792;
+  color: #fff;
+  margin-top: -5px;
+  margin-bottom: -15px;
+  text-align: center;
+}
+
+.pricing .jumbotron .display-4 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.pricing .jumbotron .lead {
+  font-size: 17px;
+}
+
+.pricing .jumbotron .pricing-list img {
+  width: 250px;
+}
+
+.pricing .jumbotron .pricing-list .display-4 {
+  font-size: 18px;
+}
+
+.pricing .jumbotron .pricing-list .lead {
+  font-size: 15px;
+}
+
+@media (min-width: 992px) {
+  /* Pricing Components */
+  .pricing .jumbotron {
+    margin-bottom: -5px;
+  }
+  .pricing .jumbotron img {
+    width: 500px;
+  }
+  .pricing .jumbotron .display-4 {
+    font-weight: 600;
+  }
+  .pricing .jumbotron .lead {
+    font-size: 15px;
+  }
+  .pricing .jumbotron .pricing-list {
+    text-align: center;
+  }
+  .pricing .jumbotron .pricing-list img {
+    width: 150px;
+  }
+  .pricing .jumbotron .pricing-list .display-4 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .pricing .jumbotron .pricing-list .lead {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=pricing.css.map */
