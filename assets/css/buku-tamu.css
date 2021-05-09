@@ -1,0 +1,51 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+.buku-tamu {
+  position: relative;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: -30px;
+}
+
+.buku-tamu .card {
+  border: none;
+  margin: auto;
+}
+
+.buku-tamu .card .display-4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #ff5792;
+}
+
+.buku-tamu .card .input-group-text {
+  background-color: #ff5792;
+  color: #fff;
+}
+
+.buku-tamu .card .btn-pink {
+  color: #fff;
+  background-color: #ff5792;
+  border-color: #ff5792;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.buku-tamu .card .btn-pink:hover {
+  background-color: transparent;
+  color: #ff5792;
+  border-color: #ff5792;
+}
+
+@media (min-width: 992px) {
+  .buku-tamu {
+    margin-bottom: 150px;
+  }
+  .buku-tamu .card {
+    width: 450px;
+  }
+}
+/*# sourceMappingURL=buku-tamu.css.map */
